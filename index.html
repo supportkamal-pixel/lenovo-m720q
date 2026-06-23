@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official Refurbished PC Quotation — Kamal Kant Tiwari</title>
+<!-- Google Fonts -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ✅ ULTRA PRO THEME VARIABLES */
+:root {
+  --bg: #0d0d1a;
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.10);
+  --gold: #f7c948;
+  --green: #00e676;
+  --lenovo-red: #e2231a; 
+  --intel-blue: #0071c5;
+  --red: #e94560;
+  --text: #f0f0f0;
+  --muted: #888;
+  --refurb: #ff9800;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',sans-serif; background:linear-gradient(135deg,#0d0d1a 0%,#151530 60%,#0a1020 100%); color:var(--text); min-height:100vh; overflow-x: hidden; }
+body::before { content:''; position:fixed; top:0;left:0;width:100%;height:100%; background:radial-gradient(circle at 20% 20%,rgba(226,35,26,.08) 0%,transparent 50%),radial-gradient(circle at 80% 80%,rgba(0,113,197,.08) 0%,transparent 50%); pointer-events:none; z-index:0; }
+
+/* ✅ PARTICLES ANIMATION */
+.particles { position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden; }
+.particle { position:absolute;border-radius:50%;background:rgba(255,152,0,.2);animation:pFloat linear infinite; }
+@keyframes pFloat { 0%{transform:translateY(100vh) rotate(0deg);opacity:0} 10%,90%{opacity:1} 100%{transform:translateY(-10vh) rotate(720deg);opacity:0} }
+
+.wrap { max-width:1380px;margin:0 auto;padding:20px;position:relative;z-index:1; }
+
+/* ✅ BRAND HEADER */
+.brand-hdr {
+  background:linear-gradient(135deg,rgba(0,50,150,.65) 0%,rgba(0,130,210,.45) 50%,rgba(0,50,150,.65) 100%);
+  border:1px solid rgba(0,150,214,.45); border-radius:20px; padding:22px 30px;
+  margin-bottom:26px; display:flex; align-items:center; justify-content:space-between;
+  flex-wrap:wrap; gap:16px; backdrop-filter:blur(20px);
+  box-shadow:0 8px 40px rgba(0,150,214,.2),inset 0 1px 0 rgba(255,255,255,.08);
+  animation:fadeInDown .7s ease;
+}
+.bl { display:flex;align-items:center;gap:14px; }
+.av { width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--refurb),#e65100);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#fff;border:3px solid rgba(255,255,255,.3);box-shadow:0 4px 20px rgba(255,152,0,.5);flex-shrink:0; }
+.bn { font-size:22px;font-weight:800;background:linear-gradient(135deg,#fff,var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+.bs { font-size:10px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:2px;margin-top:2px; }
+.br { display:flex;align-items:center;gap:18px;flex-wrap:wrap; }
+.cts { display:flex;flex-direction:column;gap:8px; }
+.cr { display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.85); }
+.ci { width:28px;height:28px;border-radius:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0; }
+.cr a{color:inherit;text-decoration:none;} .cr a:hover{color:var(--gold);}
+.vl { width:1px;height:52px;background:rgba(255,255,255,.14); }
+.qref { background:rgba(247,201,72,.14);border:1px solid rgba(247,201,72,.3);border-radius:10px;padding:9px 14px;text-align:center; }
+.ql { font-size:9px;color:var(--gold);text-transform:uppercase;letter-spacing:2px; }
+.qv { font-size:14px;font-weight:700;color:#fff; }
+.qd { font-size:10px;color:var(--muted); }
+
+/* ✅ PAGE HEADER */
+.ph { text-align:center;padding:28px 20px 18px;animation:fadeIn .8s ease .3s both; }
+.phb { display:inline-block;background:linear-gradient(135deg,var(--refurb),#ff5722);color:#fff;padding:5px 16px;border-radius:50px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px; }
+.ph h1 { font-size:clamp(20px,4vw,42px);font-weight:900;background:linear-gradient(135deg,#fff 0%,var(--refurb) 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2; }
+.ph p { color:var(--muted);font-size:13px;margin-top:7px; }
+.hdv { width:65px;height:4px;background:linear-gradient(90deg,var(--lenovo-red),var(--refurb));margin:12px auto;border-radius:2px; }
+.btnrow { display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px; }
+.btn { display:inline-flex;align-items:center;gap:7px;padding:10px 24px;border-radius:50px;font-size:12px;font-weight:600;cursor:pointer;border:none;transition:all .3s; }
+.btnp { background:linear-gradient(135deg,var(--refurb),#ff5722);color:#fff; }
+.btnp:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,152,0,.4);}
+.btns { background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2); }
+.btns:hover{background:rgba(255,255,255,.15);}
+
+/* ✅ QUICK STATS */
+.stats { display:flex;justify-content:center;gap:28px;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:32px;flex-wrap:wrap;animation:fadeIn .8s ease .5s both;backdrop-filter:blur(10px); }
+.sn{font-size:22px;font-weight:800;color:var(--gold);} .sl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+
+/* ✅ SECTION TITLE */
+.stit { text-align:center;margin:40px 0 22px; }
+.stit h2 { font-size:22px;font-weight:700;color:#fff;position:relative;display:inline-block; }
+.stit h2::after { content:'';position:absolute;bottom:-7px;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--lenovo-red),var(--refurb));border-radius:2px; }
+
+/* ✅ PC COMPONENTS CARDS (Grid Setup) */
+.pcg { display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:22px;margin-bottom:40px; justify-content:center; }
+.pcc { background:rgba(255,255,255,.038);border:1px solid var(--border);border-radius:22px;overflow:hidden;transition:transform .4s,box-shadow .4s,border-color .4s;animation:fadeInUp .6s ease both;backdrop-filter:blur(10px); }
+.pcc:hover{transform:translateY(-7px) scale(1.01);border-color:rgba(255,255,255,.28); box-shadow:0 28px 56px rgba(255,152,0,.15),0 0 0 1px rgba(255,152,0,.25);}
+.pcc:nth-child(1){animation-delay:.1s} .pcc:nth-child(2){animation-delay:.2s}
+
+.ct { padding:18px 20px 0;position:relative; }
+.btag { display:inline-flex;align-items:center;gap:5px;padding:3px 11px;border-radius:50px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px; }
+.bh{background:rgba(226,35,26,.20);color:#ff5252;border:1px solid rgba(226,35,26,.3);}
+.bd{background:rgba(255,152,0,.20);color:#ffb74d;border:1px solid rgba(255,152,0,.3);}
+.rbadge{position:absolute;top:16px;right:16px;background:linear-gradient(135deg,var(--green),#00b259);color:#1a1a1a;padding:3px 10px;border-radius:50px;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;}
+.cm{font-size:17px;font-weight:800;color:#fff;margin-bottom:4px;line-height:1.3;}
+.cs{font-size:11px;color:var(--muted);margin-bottom:12px;}
+
+/* ===== IMAGE AREA ===== */
+.ia { display:flex; flex-direction:column; gap:10px; margin:0 20px 14px; border-radius:14px; padding:10px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); }
+@media (min-width: 768px) { .ia { flex-direction:row; } .is { flex: 1 1 0; } }
+.is { position:relative; border-radius:10px; overflow:hidden; background:rgba(255,255,255,.85); min-height:220px; padding:15px; display:flex; justify-content:center; align-items:center; width:100%; }
+.is img { width:100%; height:100%; max-height:190px; object-fit:contain; transition:transform .5s; filter:drop-shadow(0 4px 10px rgba(0,0,0,.15)); cursor:zoom-in; }
+.pcc:hover .is img { transform:scale(1.07); }
+.ilb { position:absolute; bottom:0; left:0; right:0; background:rgba(0,0,0,.85); backdrop-filter:blur(4px); font-size:9px; font-weight:700; text-align:center; padding:6px; color:rgba(255,255,255,.9); letter-spacing:1.5px; text-transform:uppercase; pointer-events:none; z-index:2; border-top:1px solid rgba(255,255,255,0.1); }
+
+/* ✅ SPECS LIST */
+.ss{padding:0 20px 18px;}
+.sti{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border);}
+.sr{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:12px;}
+.sr:last-child{border-bottom:none;}
+.sk{color:var(--muted); font-weight:500;} .sv{color:#fff;font-weight:600;text-align:right;}
+.hi{color:var(--gold)!important;font-weight:800!important;}
+
+/* ✅ COMPARISON MATRIX */
+.mx{margin:44px 0;overflow-x:auto;}
+.mxt{width:100%;border-collapse:collapse;font-size:12.5px;}
+.mxt th{background:rgba(255,255,255,.07);color:#fff;padding:13px 12px;text-align:left;font-weight:700;border-bottom:2px solid rgba(255,255,255,.14);white-space:nowrap;}
+.mxt td{padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,.05);color:var(--muted);}
+.mxt td:last-child{text-align:right; color:#fff; font-weight:700;}
+.mxt tr:hover td{background:rgba(255,255,255,.04);color:#fff;}
+.catr td{background:rgba(255,152,0,.15);color:#ffb74d;font-weight:800;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:8px 12px;}
+
+/* ✅ FOOTER */
+.fb{background:linear-gradient(135deg,rgba(0,48,135,.55),rgba(0,150,214,.3));border:1px solid rgba(0,150,214,.3);border-radius:20px;padding:28px;margin-top:46px;text-align:center;backdrop-filter:blur(20px);}
+.stamp{display:inline-block;border:3px solid var(--gold);color:var(--gold);padding:8px 26px;font-size:16px;font-weight:900;letter-spacing:4px;text-transform:uppercase;border-radius:7px;transform:rotate(-3deg);margin-bottom:20px;opacity:.9;}
+.fn{font-size:19px;font-weight:800;background:linear-gradient(135deg,#fff,var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.fc{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin:16px 0;}
+.fci{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,.8);}
+.fci a{color:inherit;text-decoration:none;} .fci a:hover{color:var(--gold);}
+.fd{font-size:11px;color:var(--muted);margin-top:12px;line-height:1.8;}
+
+/* ===== E-COMMERCE MODAL UI (SWIPE & ZOOM READY) ===== */
+.modal-overlay { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,0.92); backdrop-filter: blur(8px); animation: fadeIn 0.3s; touch-action: none; }
+.modal-content { position: absolute; top: 50%; left: 50%; max-width: 90%; max-height: 80vh; transform: translate(-50%, -50%) scale(1); border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.6); object-fit: contain; cursor: grab; }
+.modal-content:active { cursor: grabbing; }
+
+.modal-close { position: absolute; top: 20px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; transition: 0.3s; z-index: 10001; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+.modal-close:hover, .modal-close:focus { color: var(--gold); transform: scale(1.1); }
+
+/* BOTTOM SLEEK NAVIGATION CONTROLS */
+.modal-controls { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; gap: 30px; z-index: 10001; }
+.modal-prev, .modal-next { 
+  color: #fff; font-size: 20px; font-weight: bold; cursor: pointer; transition: 0.3s; user-select: none;
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  width: 45px; height: 45px; backdrop-filter: blur(8px); box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.modal-prev:hover, .modal-next:hover { color: var(--gold); background: rgba(255,255,255,0.25); border-color: var(--gold); transform: scale(1.1); }
+
+/* HINT TEXT FOR ZOOM/SWIPE */
+.modal-hint { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.6); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; z-index: 10001; background: rgba(0,0,0,0.5); padding: 5px 12px; border-radius: 20px; pointer-events: none; }
+
+@media print { 
+  *{-webkit-print-color-adjust:exact!important;color-adjust:exact!important;print-color-adjust:exact!important;}
+  body{background:#0f0f1e!important;color:#ddd!important;}
+  .particles,.btnrow,.btn,.modal-overlay{display:none!important;}
+  .pcc{background:#181828!important;border:1px solid #2a2a3a!important;page-break-inside:avoid;box-shadow:none!important;transform:none!important;}
+  .ia{background:#10101e!important;border-color:#2a2a3a!important;} .is{background:#fff!important;}
+  .fb{background:#081020!important;}
+  @page{margin:10mm;size:A4;}
+}
+</style>
+</head>
+<body>
+<!-- Animated Background -->
+<div class="particles" id="particles"></div>
+<div class="wrap">
+
+<!-- 👑 BRAND HEADER -->
+<div class="brand-hdr">
+  <div class="bl">
+    <div class="av">KKT</div>
+    <div><div class="bn">Kamal Kant Tiwari</div><div class="bs">High-Performance IT Systems · Mumbai</div></div>
+  </div>
+  <div class="br">
+    <div class="cts">
+      <div class="cr"><div class="ci">📞</div><a href="tel:+919920300531"><strong>+91 9920 300 531</strong></a></div>
+      <div class="cr"><div class="ci">✉️</div><a href="mailto:supportkamal@gmail.com">supportkamal@gmail.com</a></div>
+      <div class="cr"><div class="ci">📍</div><span>Malad West, Mumbai – 400064, MH, India</span></div>
+    </div>
+    <div class="vl"></div>
+    <div class="qref"><div class="ql">Quotation Ref</div><div class="qv">#KKT-M720Q-01</div><div class="qd">Date: <script>document.write(new Date().toLocaleDateString('en-IN'))</script></div></div>
+  </div>
+</div>
+
+<!-- 📄 PAGE HEADER -->
+<div class="ph">
+  <div class="phb">🏢 Certified Refurbished Workstation</div>
+  <h1>Lenovo ThinkCentre M720q<br>Tiny PC Quotation</h1>
+  <div class="hdv"></div>
+  <p>Ultra Compact Form Factor • 8th Gen Processor • 3-Year Warranty</p>
+  <div class="btnrow">
+    <button class="btn btnp" onclick="window.print()">🖨️ Print Quotation</button>
+  </div>
+</div>
+
+<!-- 📊 QUICK STATS -->
+<div class="stats">
+  <div><div class="sn">i3 8th</div><div class="sl">Intel Core Gen</div></div>
+  <div><div class="sn">8 GB</div><div class="sl">System RAM</div></div>
+  <div><div class="sn">512 GB</div><div class="sl">Fast SSD</div></div>
+  <div><div class="sn">Tiny</div><div class="sl">Form Factor</div></div>
+  <div><div class="sn">3 Yrs</div><div class="sl">Warranty</div></div>
+</div>
+
+<!-- 🖥️ COMPONENTS GRID -->
+<div class="stit"><h2>⚙️ Detailed System Profile</h2></div>
+<div class="pcg">
+
+  <!-- 1. MAIN PC UNIT -->
+  <div class="pcc" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto;">
+    <div class="ct">
+      <div class="btag bh">Lenovo</div>
+      <div class="rbadge">💎 REFURBISHED PRO</div>
+      <div class="cm">Lenovo ThinkCentre M720q Tiny</div>
+      <div class="cs">Enterprise Grade Ultra-Small Desktop Computer</div>
+    </div>
+    
+    <!-- IMAGES WITH SLIDER CAPABILITY -->
+    <div class="ia">
+      <div class="is"><img src="https://shop-cdn.bharathisystems.com/media/2023/08/Refurbished-Lenovo-ThinkCentre-M720Q-Tiny.webp" alt="M720q Front" onclick="openModal(this)"><div class="ilb">FRONT VIEW</div></div>
+      <div class="is"><img src="https://shop-cdn.bharathisystems.com/media/2023/08/Refurbished-Lenovo-ThinkCentre-M720Q-Tiny-BackSide.webp" alt="M720q Back Ports" onclick="openModal(this)"><div class="ilb">REAR PORTS</div></div>
+      <div class="is"><img src="https://www.myorderstore.com/image/cache/catalog/Products/Products/lenovom720qtiny-1100x1100w.png.webp" alt="M720q Size" onclick="openModal(this)"><div class="ilb">ULTRA COMPACT SIZE</div></div>
+      <div class="is"><img src="https://m.media-amazon.com/images/I/61FAZK-QtIL._AC_SL1000_.jpg" onclick="openModal(this)"><div class="ilb">ADAPTOR</div></div>
+    </div>
+    
+    <div class="ss" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 40px;">
+      <div class="left-specs">
+          <div class="sti">Core Hardware</div>
+          <div class="sr"><span class="sk">Processor (CPU)</span><span class="sv hi">Intel Core i3 (8th Generation)</span></div>
+          <div class="sr"><span class="sk">System Memory</span><span class="sv hi">8 GB RAM (Upgradable)</span></div>
+          <div class="sr"><span class="sk">Storage Drive</span><span class="sv hi">512 GB Solid State Drive (SSD)</span></div>
+          <div class="sr"><span class="sk">Form Factor</span><span class="sv">1L Tiny Desktop</span></div>
+      </div>
+      <div class="right-specs">
+          <div class="sti">Connectivity & Support</div>
+          <div class="sr"><span class="sk">Ports (Front)</span><span class="sv">USB 3.1, Type-C, Audio Jack</span></div>
+          <div class="sr"><span class="sk">Ports (Rear)</span><span class="sv">DisplayPort, HDMI, USB, LAN</span></div>
+          <div class="sr"><span class="sk">Condition</span><span class="sv">A-Grade Certified Refurbished</span></div>
+          <div class="sr"><span class="sk">Warranty Coverage</span><span class="sv hi">3 Years Full Warranty</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. OPTIONAL ACCESSORY -->
+  <div class="pcc" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto;">
+    <div class="ct">
+      <div class="btag bd">Optional Add-on</div>
+      <div class="cm">Official VESA Mounting Kit</div>
+      <div class="cs">Mount your Tiny PC directly behind the monitor to save desk space</div>
+    </div>
+    <div class="ia">
+      <div class="is"><img src="https://i5.walmartimages.com/asr/65384a91-de39-4641-9578-0567ec7a3e92.80a0d76af4f6e90b4b10d645aab0222f.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="Mount Bracket" onclick="openModal(this)"><div class="ilb">MOUNTING BRACKET</div></div>
+      <div class="is"><img src="https://i5.walmartimages.com/seo/Mainframe-Mount-Bracket-Lenovo-Tiny-VESA-System-Mounting-Bracket-Wall-VESA-Lenovo-ThinkCentre-Tiny-Desktops-M93p-M700-M710q-M910q-M910X-M720q-M920q-M_e4e3eaac-5b67-41ea-874a-cda2fd950545.1bbd310240967139a679be890b95f7e7.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="Mounted PC" onclick="openModal(this)"><div class="ilb">BEHIND MONITOR SETUP</div></div>
+    </div>
+    <div class="ss">
+      <div class="sti">Accessory Details</div>
+      <div class="sr"><span class="sk">Compatibility</span><span class="sv">Fits Lenovo ThinkCentre Tiny Series</span></div>
+      <div class="sr"><span class="sk">Installation</span><span class="sv">Standard VESA Monitor Mount</span></div>
+      <div class="sr"><span class="sk">Additional Cost</span><span class="sv hi">₹ 850/- Extra</span></div>
+    </div>
+  </div>
+
+</div><!-- /pcg -->
+
+<!-- 📊 TOTAL PRICING SUMMARY -->
+<div class="stit"><h2>📋 Quotation Summary</h2></div>
+<div class="mx">
+  <table class="mxt">
+    <thead>
+      <tr>
+        <th>Product Description</th>
+        <th>Configuration</th>
+        <th>Pricing Estimate (Net)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="catr"><td colspan="3">MAIN SYSTEM</td></tr>
+      <tr>
+        <td>Lenovo ThinkCentre M720q Tiny PC</td>
+        <td>Intel Core i3 8th Gen | 8GB RAM | 512GB SSD</td>
+        <td>₹ 25,847.00</td>
+      </tr>
+      <tr class="catr"><td colspan="3">OPTIONAL UPGRADES</td></tr>
+      <tr>
+        <td>VESA Mounting Kit Bracket</td>
+        <td>Space-saving monitor back mount</td>
+        <td style="color:var(--gold);">₹ 850/- Extra</td>
+      </tr>
+      <tr style="background:rgba(255, 103, 31,1);">
+        <td colspan="2" style="color:#06038D; font-size:16px; font-weight:800; text-transform:uppercase;">Total Amount (with 18% GST)</td>
+        <td style="color:#06038D; font-size:18px; font-weight:900;">₹ 30,500.00 /- Only</td>
+      </tr>
+      <tr style="background:rgba(255, 255, 255,1);">        
+        <td colspan="2" style="color:#06038D; font-size:16px; font-weight:800; text-transform:uppercase;">Included GST Amount (18%)</td>
+        <td style="color:#06038D; font-size:18px; font-weight:900;">₹ 4,653.00 /- Approx</td>
+      </tr>
+      <tr style="background:rgba(4, 106, 56,1);">
+        <td colspan="2" style="color:#FFFFFF; font-size:16px; font-weight:800; text-transform:uppercase;">Comprehensive Warranty</td>
+        <td style="color:#FFFFFF; font-size:18px; font-weight:900;">3 Years Included</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 📞 FOOTER -->
+<div class="fb">
+  <div class="stamp">QUOTATION</div>
+  <div class="fn">Kamal Kant Tiwari</div>
+  <p style="color:rgba(255,255,255,.55);font-size:12px;margin-bottom:14px">High-Performance IT Systems & Setup</p>
+  <div class="fc">
+    <div class="fci">📞 <a href="tel:+919920300531"><strong>+91 9920 300 531</strong></a></div>
+    <div class="fci">✉️ <a href="mailto:supportkamal@gmail.com">supportkamal@gmail.com</a></div>
+    <div class="fci">📍 Malad West, Mumbai – 400064</div>
+    <div class="fci">🇮🇳 Maharashtra, India</div>
+  </div>
+  <div class="fd">
+    Quotation Ref: #KKT-M720Q-01 | Generated on: <script>document.write(new Date().toLocaleDateString('en-IN'))</script><br>
+    Prices mentioned are subject to market changes and stock availability. Refurbished units come with 3 years hardware warranty.<br>
+    © 2026 Kamal Kant Tiwari — All rights reserved.
+  </div>
+</div>
+
+<!-- 🖼️ E-COMMERCE STYLE IMAGE SLIDER & ZOOM MODAL -->
+<div id="imageModal" class="modal-overlay">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <div class="modal-hint">Swipe to switch • Pinch/Scroll to Zoom</div>
+  <img class="modal-content" id="expandedImg">
+  
+  <div class="modal-controls">
+    <span class="modal-prev" onclick="changeSlide(-1)">&#10094;</span>
+    <span class="modal-next" onclick="changeSlide(1)">&#10095;</span>
+  </div>
+</div>
+
+</div>
+<script>
+// Particles Background Animation
+const pc=document.getElementById('particles');
+for(let i=0;i<18;i++){const p=document.createElement('div');p.className='particle';p.style.cssText=`left:${Math.random()*100}%;width:${2+Math.random()*4}px;height:${2+Math.random()*4}px;animation-duration:${9+Math.random()*12}s;animation-delay:${Math.random()*12}s;opacity:${.12+Math.random()*.25}`;pc.appendChild(p);}
+
+// Mouse Hover Spotlight Effect
+document.querySelectorAll('.pcc').forEach(c=>{c.addEventListener('mousemove',function(e){const r=this.getBoundingClientRect();this.style.background=`radial-gradient(circle at ${e.clientX-r.left}px ${e.clientY-r.top}px,rgba(255,255,255,.06) 0%,rgba(255,255,255,.02) 50%,transparent 100%)`;});c.addEventListener('mouseleave',function(){this.style.background='rgba(255,255,255,0.038)';});});
+
+// ===== ULTRA PRO IMAGE SLIDER & ZOOM SCRIPT =====
+let currentImagesArray = [];
+let currentImageIndex = 0;
+let currentZoom = 1;
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("expandedImg");
+
+function openModal(imgElement) {
+  const imageContainer = imgElement.closest('.ia');
+  currentImagesArray = Array.from(imageContainer.querySelectorAll('img'));
+  currentImageIndex = currentImagesArray.indexOf(imgElement);
+  
+  modal.style.display = "block";
+  updateImage();
+}
+
+function closeModal() {
+  modal.style.display = "none";
+  resetZoom();
+}
+
+function updateImage() {
+  modalImg.src = currentImagesArray[currentImageIndex].src;
+  resetZoom();
+}
+
+function changeSlide(step) {
+  currentImageIndex += step;
+  if (currentImageIndex >= currentImagesArray.length) {
+    currentImageIndex = 0;
+  } else if (currentImageIndex < 0) {
+    currentImageIndex = currentImagesArray.length - 1;
+  }
+  updateImage();
+}
+
+function resetZoom() {
+  currentZoom = 1;
+  modalImg.style.transform = `translate(-50%, -50%) scale(1)`;
+}
+
+// Background pe click karne se modal close ho jayega
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+// Keyboard Navigation
+document.addEventListener('keydown', function(event) {
+  if (modal.style.display === "block") {
+    if (event.key === "ArrowLeft") changeSlide(-1);
+    if (event.key === "ArrowRight") changeSlide(1);
+    if (event.key === "Escape") closeModal();
+  }
+});
+
+// ==========================================
+// 🚀 SWIPE & PINCH-TO-ZOOM LOGIC (MOBILE)
+// ==========================================
+let touchStartX = 0;
+let touchEndX = 0;
+let initialDistance = null;
+
+modalImg.addEventListener('touchstart', e => {
+  if (e.touches.length === 1) {
+    touchStartX = e.touches[0].clientX;
+  } else if (e.touches.length === 2) {
+    // Agar 2 ungliyan hain, toh unke beech ki duri nikalo
+    initialDistance = Math.hypot(
+      e.touches[0].clientX - e.touches[1].clientX,
+      e.touches[0].clientY - e.touches[1].clientY
+    );
+  }
+}, {passive: false});
+
+modalImg.addEventListener('touchmove', e => {
+  if (e.touches.length === 2 && initialDistance) {
+    e.preventDefault(); // Zoom karte waqt page slide hone se roko
+    const currentDistance = Math.hypot(
+      e.touches[0].clientX - e.touches[1].clientX,
+      e.touches[0].clientY - e.touches[1].clientY
+    );
+    const scaleChange = currentDistance / initialDistance;
+    currentZoom = Math.min(Math.max(1, currentZoom * scaleChange), 4); // Max 4x Zoom limit
+    modalImg.style.transform = `translate(-50%, -50%) scale(${currentZoom})`;
+    initialDistance = currentDistance;
+  }
+}, {passive: false});
+
+modalImg.addEventListener('touchend', e => {
+  if (e.changedTouches.length === 1 && currentZoom === 1) {
+    // Agar zoom nahi kiya hai, tabhi swipe se aage-peeche jao
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe();
+  }
+  if (e.touches.length < 2) {
+    initialDistance = null;
+  }
+});
+
+function handleSwipe() {
+  const SWIPE_THRESHOLD = 50; // Kam se kam itna lamba swipe hona chahiye
+  if (touchStartX - touchEndX > SWIPE_THRESHOLD) changeSlide(1); // Swipe Left -> Next Image
+  if (touchEndX - touchStartX > SWIPE_THRESHOLD) changeSlide(-1); // Swipe Right -> Prev Image
+}
+
+// ==========================================
+// 🖱️ SCROLL TO ZOOM LOGIC (DESKTOP)
+// ==========================================
+modalImg.addEventListener('wheel', e => {
+  e.preventDefault();
+  // Scroll wheel upar ghumane par badi hogi, neeche par choti
+  currentZoom += e.deltaY * -0.002;
+  currentZoom = Math.min(Math.max(1, currentZoom), 4); // Max 4x Zoom Limit
+  modalImg.style.transform = `translate(-50%, -50%) scale(${currentZoom})`;
+}, {passive: false});
+
+</script>
+</body>
+</html>
